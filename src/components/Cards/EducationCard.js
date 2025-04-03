@@ -23,10 +23,11 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.9s ease-in-out;
     &:hover {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
         transform: translateY(-5px);
+        height: auto;
     }
 
     &:hover ${Document} {
@@ -36,7 +37,7 @@ const Card = styled.div`
     @media (max-width: 768px) {
         padding: 10px;
         gap: 8px;
-        width: 300px;
+        width: 320px;
     }
 
     border: 0.1px solid #306ee8;
@@ -108,11 +109,11 @@ const Span = styled.span`
     max-height: 80px; /* Adjust this based on your normal text height */
     overflow: hidden;
     text-overflow: ellipsis;
-    transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in-out;
+    transition: max-height 0.9s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.8;
 
     ${Card}:hover & {
-        max-height: 500px; /* Large enough to show the full text */
+        max-height: 700px; /* Large enough to show the full text */
         opacity: 1;
     }
 `;

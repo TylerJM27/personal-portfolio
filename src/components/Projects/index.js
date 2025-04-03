@@ -96,16 +96,16 @@ const CardContainer = styled.div`
     align-items: center;
     gap: 28px;
     flex-wrap: wrap;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 32px;
-    // grid-auto-rows: minmax(100px, auto);
-    // @media (max-width: 960px) {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
-    // @media (max-width: 640px) {
-    //     grid-template-columns: repeat(1, 1fr);
-    // }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    grid-auto-rows: minmax(100px, auto);
+    @media (max-width: 960px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 640px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
 const Projects = () => {
@@ -135,22 +135,22 @@ const Projects = () => {
                         active={toggle === "web app"}
                         onClick={() => setToggle("web app")}
                     >
-                        WEB APP'S
+                        WEB APPS
                     </ToggleButton>
                     <Divider />
                     <ToggleButton
-                        active={toggle === "android app"}
-                        onClick={() => setToggle("android app")}
+                        active={toggle === "mobile app"}
+                        onClick={() => setToggle("mobile app")}
                     >
-                        MOBILE APP'S
+                        MOBILE APPS
                     </ToggleButton>
-                    <Divider />
+                    {/* <Divider />
                     <ToggleButton
                         active={toggle === "machine learning"}
                         onClick={() => setToggle("machine learning")}
                     >
                         MACHINE LEARNING
-                    </ToggleButton>
+                    </ToggleButton> */}
                 </ToggleGroup>
 
                 <CardContainer>

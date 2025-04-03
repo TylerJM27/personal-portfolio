@@ -1,21 +1,8 @@
 import styled from "styled-components";
 
-const Button = styled.button`
-    display: none;
-    width: 100%;
-    padding: 10px;
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.text_black};
-    font-size: 14px;
-    font-weight: 700;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.8s ease-in-out;
-`;
 const Card = styled.div`
     width: 330px;
-    height: 490px;
+    height: 550px;
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
     border-radius: 10px;
@@ -27,22 +14,20 @@ const Card = styled.div`
     gap: 14px;
     transition: all 0.9s ease-in-out;
     &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-10px) scale(1.1);
         box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
         filter: brightness(1.1);
         height: auto;
-    }
-    &:hover ${Button} {
-        display: block;
     }
 `;
 
 const Image = styled.img`
     width: 100%;
-    height: 180px;
+    height: 100%;
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
     box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
 `;
 
 const Tags = styled.div`
@@ -98,7 +83,6 @@ const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary + 99};
     margin-top: 8px;
-    display: -webkit-box;
     max-width: 100%;
     max-height: 65px;
     overflow: hidden;
@@ -106,9 +90,9 @@ const Description = styled.div`
     opacity: 0.8;
 
     ${Card}:hover & {
-        max-height: 700px;
+        max-height: 500px;
         opacity: 1;
-        overflow: hidden;
+        overflow: visable;
     }
 `;
 

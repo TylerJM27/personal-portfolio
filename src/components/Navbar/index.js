@@ -35,7 +35,7 @@ const NavbarContainer = styled.div`
 `;
 
 const NavLogo = styled(LinkR)`
-    width: 80%;
+    width: 55%;
     padding: 0 6px;
     display: flex;
     justify-content: flex-start;
@@ -185,7 +185,7 @@ const Navbar = () => {
                 <NavItems>
                     <NavLink href="#about">About</NavLink>
                     <NavLink href="#skills">Skills</NavLink>
-                    <NavLink href="#experience">Experience</NavLink>
+                    {/* <NavLink href="#experience">Experience</NavLink> */}
                     <NavLink href="#projects">Projects</NavLink>
                     <NavLink href="#education">Education</NavLink>
                 </NavItems>
@@ -216,14 +216,14 @@ const Navbar = () => {
                     >
                         Skills
                     </MobileMenuLinks>
-                    <MobileMenuLinks
+                    {/* <MobileMenuLinks
                         href="#experience"
                         onClick={() => {
                             setOpen(!open);
                         }}
                     >
                         Experience
-                    </MobileMenuLinks>
+                    </MobileMenuLinks> */}
                     <MobileMenuLinks
                         href="#projects"
                         onClick={() => {
@@ -254,7 +254,7 @@ const Navbar = () => {
                     </SocialMediaButton>
                     <SocialMediaButton
                         style={{
-                            padding: "10px 16px",
+                            padding: "10px 20px",
                             background: `${theme.primary}`,
                             color: "white",
                             width: "max-content",

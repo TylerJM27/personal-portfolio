@@ -50,7 +50,7 @@ const SkillsContainer = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 35px;
     gap: 30px;
     justify-content: center;
 `;
@@ -63,6 +63,12 @@ const Skill = styled.div`
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
     border-radius: 16px;
     padding: 18px 36px;
+    transition: all 0.9s ease-in-out;
+    &:hover {
+        transform: translateY(-10px) scale(1.1);
+        box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+        filter: brightness(1.1);
+    }
     @media (max-width: 768px) {
         max-width: 400px;
         padding: 10px 36px;
