@@ -167,12 +167,16 @@ const ProjectCard = ({ project }) => {
         <Card>
             <Image src={project.image} />
             <WebsiteButtons>
-                <WebsiteButton href={project.github} target="_blank">
-                    View Source Code
-                </WebsiteButton>
-                <WebsiteButton href={project.webapp} target="_blank">
-                    View Live Demo
-                </WebsiteButton>
+                {project.github && project.github.trim() !== "" && (
+                    <WebsiteButton href={project.github} target="_blank">
+                        View Source Code
+                    </WebsiteButton>
+                )}
+                {project.webapp && project.webapp.trim() !== "" && (
+                    <WebsiteButton href={project.webapp} target="_blank">
+                        View Live Demo
+                    </WebsiteButton>
+                )}
             </WebsiteButtons>
             <Tags>
                 {project.tags.map((tag) => (
