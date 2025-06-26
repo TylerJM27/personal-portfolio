@@ -26,6 +26,11 @@ import zoom from "./icons/zoom.svg";
 import discord from "./icons/discord.svg";
 import ngrok from "./icons/ngrok.svg";
 import vercel from "./icons/Vercel.svg";
+import scrySurvive from "../images/mtg-life.png";
+import docker from "./icons/Docker.svg";
+import php from "./icons/PHP.svg";
+import jest from "./icons/Jest.svg";
+import vite from "./icons/Vite.js.svg";
 
 export const Bio = {
     name: "Tyler J. Miller",
@@ -60,6 +65,10 @@ export const skills = [
             {
                 name: "Next Js",
                 image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
+            },
+            {
+                name: "Vite Js",
+                image: vite,
             },
             {
                 name: "HTML5",
@@ -117,6 +126,10 @@ export const skills = [
             {
                 name: "Python",
                 image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+            },
+            {
+                name: "PHP",
+                image: php,
             },
             {
                 name: "MySQL",
@@ -187,6 +200,14 @@ export const skills = [
             {
                 name: "Vercel",
                 image: vercel,
+            },
+            {
+                name: "Docker",
+                image: docker,
+            },
+            {
+                name: "Jest",
+                image: jest,
             },
             {
                 name: "Ngrok",
@@ -366,7 +387,7 @@ export const education = [
 
 export const projects = [
     {
-        id: 1,
+        id: 0,
         title: "Beyond The Script",
         date: "Feb 2025 - Present",
         description:
@@ -406,7 +427,7 @@ export const projects = [
         // ],
     },
     {
-        id: 0,
+        id: 1,
         title: "CampCritic - Your Guide to the Best Campsites",
         date: "Oct 2024 - Nov 2024",
         description:
@@ -450,6 +471,26 @@ export const projects = [
         category: "mobile app",
         github: "https://github.com/TylerJM27/ReactNativeNucampsite.git",
         webapp: "",
+    },
+    {
+        id: 1,
+        title: "Scry & Survive - A Magic The Gathering life counter",
+        date: "April 2025 - June 2025",
+        description:
+            "Scry & Survive is a sleek and intuitive app designed to keep track of player life totals, poison counters, and commander damage during your games. Featuring a built-in Commander Search powered by the Scryfall API, it lets you easily find and assign commanders to players, enhancing gameplay with dynamic tracking and colorful UI. Perfect for multiplayer Commander matches, this app helps you focus on strategy — not math.",
+        image: scrySurvive,
+        tags: [
+            "React",
+            "JavaScript",
+            "HTML",
+            "TailwindCSS",
+            "Git",
+            "GitHub",
+            "Vercel",
+        ],
+        category: "web app",
+        github: "https://github.com/TylerJM27/mtg-life-counter.git",
+        webapp: "https://mtg-life-counter-tawny.vercel.app/",
     },
 ];
 
